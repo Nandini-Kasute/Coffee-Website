@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            outline: none;
+            text-decoration: none;
+            text-transform:capitalize;
+            transition: 2s linear;
+            font-size: large;
+        }
+        body{
+            background-color:white;
+         }
+         header{
+            background-color: ghostwhite;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+            position: fixed;
+            top:0 ; left: 0; right: 0;
+         }
+         .header .logo img{
+            height: 40px;
+         }
+         .header .navbar a{
+           margin: 5px;
+           font-size: 15px;
+           color:black;
+           overflow: hidden;
+           height: 20px;
+         }
+         .header .navbar a:hover{
+            color:coral;
+            border-bottom: 2px solid red;
+        
+         }
+         .header .icons div{
+            color: black;
+            font-size: 100%;
+            font-style:oblique;
+            margin-left: 5px;
+         }
+         .header .icons div:hover{
+            color:red;
+         }
+         .header .container{
+            position: absolute;
+            top: 100%;
+            right: 0;
+            height: 100%;
+            width: 35rem;
+            background: #fff;
+            padding: 0 1.5rem;
+         }
+         
+         
+         
+         .homepage{
+            height: 100vh;
+            background-image:url("images/c2.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            margin: 10px 0px 0px 0px;
+         }
+
+         
+         .homepage h2{
+            color:white;
+            font-size: 70px;
+            margin: 0px 0px 5px 90px;
+         }
+       
+       .homepage p{
+         font-size: 25px;
+         margin: 0px 0px 5px 90px;
+         color: whitesmoke;
+       }
+       .homepage button{
+         background-image: url("./images/button.png");
+         margin: 5px 0px 5px 150px;
+         height: 40px;
+         width: 180px;
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         border: none;
+       }
+       .homepage .btn:hover{
+         transition: 2s;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 20px 5px brown;
+       }
+       .about{
+         height: 285px;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         background-color: lavenderblush;
+       }
+       .about .brands {
+         justify-content: center;
+         text-align: center;
+         font-size: 70px;
+      
+       }
+       .about .a-box{
+         height: 180px;
+         width: 150px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         
+       }
+       .a-box img{
+         height: 60%;
+      }
+      .a-box img:hover{
+         transition: 2s;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 20px 5px plum;
+      }
+      .Menu {
+         height: 180px;
+          width: 150px;
+      
+         } 
+         .m{
+            height: 100px;
+            width: 100%;
+            font-size: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }  
+         .p{
+            font-size: 20px;
+            text-align: center;
+          }
+         .menuitems {
+           display: flex;
+           justify-content: space-around;
+           align-content: center;
+           flex-wrap: wrap;
+          
+           }
+         .menuitems .mt{
+            height: 550px;
+            width: 355px;
+            
+
+
+         }
+         .mt img{
+            height: 65%;
+            width: 100%;
+            object-fit: cover;
+         }
+         .mt .s{
+            font-size: 30px;
+         }
+         .mt img:hover{
+            transition: 2s;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 20px 5px brown;
+         }
+         .tline .t{
+           font-size: 60px;
+           font-style: italic;
+           text-align: center;
+           background-color: lavenderblush;
+           color:purple;
+         }
+         .products{
+            background-color: lightpink;
+         }
+         .products h1{
+            text-align: center;
+            font-size: 70px;
+            margin-top: 0%;
+         }
+      .container{
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         flex-wrap: wrap;
+         padding: 0px 0px 0px 0px ;
+      }
+         .container .p-cart {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            flex-direction:  column;
+            flex-wrap: wrap;
+            height: 500px;
+            width: 380px;
+            box-sizing: border-box;
+            display: block;
+            margin: 20px 30px 20px 30px;
+            padding: 0px 0px 0px 0px ;
+
+         }
+         .p-cart .img{
+            height:380px;
+            width: 100px;
+            object-fit: contain;
+            flex-direction: column;
+            margin: 20px 30px 20px 30px;
+            padding: 0px 0px 0px 0px ;
+            justify-content: space-between;
+            
+         }
+         .p-cart img:hover{
+            transition: 2s;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 20px 5px palevioletred;
+         }
+         
+         .review{
+            background-color: lightblue;
+         }
+         .review h1{
+            font-size: 70px;
+            font-style: italic;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .box-c{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0px 0px 0px 0px;
+         }
+         .box-c .box{
+            
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            flex-direction:  column;
+            flex-wrap: wrap;
+            height: 500px;
+            width: 300px;
+            box-sizing: border-box;
+            display: block;
+            margin: 0px 10px 0px 10px;
+            padding: 0px 0px 0px 0px ;
+         }
+         .box-c .box .img{
+            height:380px;
+            width: 300px;
+            object-fit: contain;
+            flex-direction: column;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px ;
+            justify-content: space-around;
+            
+         }
+         .box-c .box img:hover{
+            transition: 2s;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 20px 5px palevioletred;
+         }
+         .contact{
+            height: 100%;
+            width: 100%;
+         }
+         
+         .contact .c{
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+         }
+         .contact .row{
+            display: flex;
+            justify-content: center;
+            background: #fff;
+            flex-wrap: wrap;
+            gap: 20rem;
+            background-color: cadetblue;
+            height: 30vh;
+            margin: 0px 0px 0px 0px ;
+            padding: 10px 10px 10px 10px;
+         }
+         
+         
+         .contact.row form{
+            flex: 1 1 45rem;
+            padding: 5rem 2rem;
+            text-align: center;
+         }
+         .contact.row form h3{
+            text-transform: uppercase;
+            font-size: 20px;
+            font-style: italic solid black;
+            color: lavender;
+         }
+         .contact.row form.inputbox{
+            display: flex;
+            align-items: center;
+            margin-bottom: 40rem;
+            background: black;
+            border: var(--border);
+         }
+         
+         .contact.row form.inputbox input{
+            width: 200%;
+            height: 50%;
+            padding: 2rem;
+            font-size: 20rem;
+            color: #fff;
+            text-transform: none;
+            background: none;
+         }
+         #blog{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            border-bottom: 1px solid brown;
+            background-color:azure;
+         }
+         .blog-heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+         }
+         .blog-heading span{
+             color: red;
+
+         }
+         .blog-heading h3{
+            font-size: 60px;
+            color: brown;
+            font-weight: 600;
+         }
+         .b-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            flex-wrap: wrap;
+         }
+         .b-box{
+            width: 350px;
+            background-color: #ffffff;
+            border: 1px solid lavender;
+            margin: 20px;
+
+         }
+         .b-img{
+            width: 100%;
+            height: auto;
+         }
+         .b-img img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+         }
+         .b-text{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+         }
+         .b-text span{
+            color:red;
+            font-size: 0.9rem;
+         }
+         .b-text .b-title{
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: black;
+         }
+         .b-text .b-title:hover{
+            color: blue;
+            transition: 0.3s;
+         }
+         .b-text p{
+            color: #9b9b9b;;
+            font-size: 0.9rem;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 20px 0px;
+
+            
+         }
+         .b-text a{
+            color: gray;
+         }
+         .b-text a:hover{
+        
+            color: red;
+            transition: 0.3s;
+
+         }
+
+
+         
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+        <img src="images/logo copy.png"  class="" alt="">
+         </a>
+         <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">Contact</a>
+            <a href="#blogs">blogs</a>
+
+         </nav>
+         <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+         </div>
+</header>
+
+
+    <section class="homepage">
+      <p>we really like what we do</p>
+      <h2>coffee is a <br>language in<br> itself</h2>
+      <button class="btn">order now</button>
+    </section>
+
+
+    <section class="about">
+      <h1 class="brands" > OUR TRUSTED BRANDS</h1>
+      <div class="a-box">
+         
+         <img src="images/brandImg1 copy.png" alt="">
+
+      </div>
+      <div class="a-box">
+         
+         <img src="images/brandImg2.png" alt="">
+
+      </div>
+      <div class="a-box">
+         
+         <img src="images/brandImg3.png" alt="">
+
+      </div>
+      <div class="a-box">
+         
+         <img src="images/brandImg5.png" alt="">
+
+      </div>
+
+    </section>
+    <section class="menu">
+      <h1 class="m">OUR MENU</h1>
+      <p class="p">Good Ideas Starts With Brainstorming<br> Great Ideas Starts With Coffee.....</p>
+      <div class="menuitems">
+         <div class="mt">
+            <img src="images/m1.png" alt="">
+            <span class="s">Latte</span>
+            <h3>Never Late Latte</h3>
+            <strong>$18</strong>
+         </div>
+         <div class="mt">
+            <img src="images/m2.png" alt="">
+            <span class="s">Flat White</span>
+            <h3>Eat Sleep Flat White Repeat</h3>
+            <strong>$20</strong>
+         </div>
+         <div class="mt">
+            <img src="images/m5.png" alt="">
+            <span class="s">Cappuccino</span>
+            <h3>Every Sip is a Small Celebration</h3>
+            <strong>$25</strong>
+         </div>
+         <div class="mt">
+            <img src="images/m8.png" alt="">
+            <span class="s">Espresso</span>
+            <h3>More Espresso Less Depresso</h3>
+            <strong>$23</strong>
+         </div>
+         <div class="mt">
+            <img src="images/m7.png" alt="">
+            <span class="s">Macchiato</span>
+            <h3>All U Need is Music and Mocchiato</h3>
+            <strong>$20</strong>
+         </div>
+         <div class="mt">
+            <img src="images/m3.png" alt="">
+            <span class="s">Affogato</span>
+            <h3>When Icecreame meets espresso ,Affogato happens!!</h3>
+            <strong>$21</strong>
+         </div>
+         <div class="mt">
+            <img src="images/m4.png" alt="">
+            <span class="s">Americano</span>
+            <h3>Everything gets Better with Americano</h3>
+            <strong>$25</strong>
+         </div>
+         <div class="mt">
+            <img src="images/m6.png" alt="">
+            <span class="s">Breve</span>
+            <h3>Life happens Breve Helps</h3>
+            <strong>$18</strong>
+         </div>
+      </div>
+      <section class="tline">
+            <h2 class="t">TODAY'S GOOD MOOD IS SPONSORED BY COFFEE<BR> #COFFEE LOVERS.....</h2>
+      </section>
+
+    </section>
+    <section class="products">
+
+      <h1>OUR PRODUCTS</h1>
+      <div class="container">
+         <div class="p-cart">
+            <img src="images/arabica coffee.png" alt="">
+         </div>
+
+         <div class="p-cart">
+            <img src="https://m.media-amazon.com/images/I/41sldpcV66L._AC_.jpg" alt="">
+         </div>
+         <div class="p-cart">
+            <img src="images/Decaf caffee.png" alt="">
+         </div>
+         
+         
+      </div>
+    </section>
+    <section class="review">
+      <h1>Customer's review</h1>
+      <div class="box-c">
+         <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStiNfsvrRWzk8RnEHt84Eo4b8bjx_oB445jw&s" alt="">
+         </div>
+         <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2R01osD2Yr1mCo0aMtujwoy1a8jEJ47KUMA&s" alt="">
+         </div>
+         <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3N3YQVgHPhdJyt8Qi8X7F6hwZN0FRVkxiQ&s" alt="">
+         </div>
+         <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcohZ8AZifNs8YYekiW-d1iBYa0FqU9EC-Zw&s" alt="">
+         </div>
+      </div>
+
+    </section>
+    <section class="contact" id="contact">
+      <h1 class="c"> Contact Us</h1>
+      <div class="row">
+         <form action="">
+            <h3>get in touch</h3>
+            <div class="inputbox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="name">
+            </div>
+            <div class="inputbox">
+               <span class="fas fa-envelope"></span>
+               <input type="email" placeholder="email">
+               </div>
+               <div class="inputbox">
+                  <span class="fas fa-phone"></span>
+                  <input type="number" placeholder="number">
+                  </div>
+                  <input type="submit" value="contact now" class="btn">
+         </form>
+
+      </div>
+    </section>
+
+    <section id="blog">
+      <div class="blog-heading">
+         <span>Our Recent Posts</span>
+         <h3>OUR BLOGS</h3>
+      </div>
+
+      <div class="b-container"> 
+         <div class="b-box">
+            <div class="b-img">
+               <img src= "images/image1.png" alt="blog">
+            </div>
+            <div class="b-text">
+               <span>10 oct 2024</span>
+               <a href="#" class="b-title">Cold Coffee Brew:<br>Chill Out, Refresh & Home</a>
+               <p>In recent years, cold brew coffee has transformed from a niche beverage into a mainstream favourite, captivating coffee enthusiasts worldwide.This chilled concoction offers a smooth, refreshing alternative to traditional hot brews, making it a go-to choice for many... </p>
+               <a href="#" >Read More</a>
+             </div>
+         
+         </div>
+         <div class="b-box">
+            <div class="b-img">
+               <img src= "images/image2.png" alt="blog">
+            </div>
+            <div class="b-text">
+               <span>2 Nov 2024</span>
+               <a href="#" class="b-title">5 Reasons Why You Should Drink Coffee<br>from a Stainless Steel Mug</a>
+               <p>Are you still using a basic ceramic mug for your daily coffee? It's time to upgrade! Stainless steel has been a staple in Indian steel households for generations-often considered a traditional choice.But it's time to change that perspective!</p>
+               <a href="#" >Read More</a>
+             </div>
+         
+         </div>
+         <div class="b-box">
+            <div class="b-img">
+               <img src= "images/image5.png" alt="blog">
+            </div>
+            <div class="b-text">
+               <span>12 Nov 2024</span>
+               <a href="#" class="b-title">Simple Guide to Buying<br>Best Coffee Beans</a>
+               <p>The journey to a great cup of coffee starts long before you take that first sip... It begins with choosing the right coffee beans. India's rich coffee-growing regions like Chikmagalur and Coorg are home to some of the best beans...</p>
+               <a href="#" >Read More</a>
+             </div>
+         
+         </div>
+      </div>
+
+    </section>
+    
+
+
+
+</body>
+</html>
